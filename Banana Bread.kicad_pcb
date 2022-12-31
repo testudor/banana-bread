@@ -4459,7 +4459,7 @@
       )
     )
   )
-  (zone locked (net 0) (net_name "") (layers "B.Cu" "Edge.Cuts") (tstamp 3e64b9cf-5e12-46e6-b743-e43e9e4c872f) (hatch edge 0.508)
+  (zone locked (net 0) (net_name "") (layers "B.Cu" "Edge.Cuts") (tstamp 3e64b9cf-5e12-46e6-b743-e43e9e4c872f) (hatch full 0.508)
     (connect_pads (clearance 0))
     (min_thickness 0.254)
     (keepout (tracks not_allowed) (vias not_allowed) (pads not_allowed) (copperpour not_allowed) (footprints allowed))
