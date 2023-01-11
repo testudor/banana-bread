@@ -8,3 +8,4 @@ The input is rated for 24A continuous current and PCB traces are spec'd to match
 
 | ![Alt text](./images/front.png) | ![Alt text](./images/back.png) |
 |:---:|:---:|
+|Top|Bottom|
