@@ -1,0 +1,21 @@
+# Example KiBot config file
+kibot:
+  version: 1
+
+preflight:
+  run_erc: true
+  run_drc: true
+  check_zone_fills: true
+  ignore_unconnected: false
+
+global:
+  # We want the revision added to the names for this project
+  output: "%f-%i_%r.%x"
+
+filters:
+  - name: "exclude_any"
+    type: "generic"
+    comment: "Exclude logos, testpoints, fiducials and power"
+    exclude_any:
+      - column: Reference
+        regex: "^(G|#|TP|F).*"
