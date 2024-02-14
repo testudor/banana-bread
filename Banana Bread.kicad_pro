@@ -454,12 +454,7 @@
       "MAIN": "rgb(255, 14, 252)"
     },
     "netclass_assignments": null,
-    "netclass_patterns": [
-      {
-        "netclass": "TP",
-        "pattern": "MAIN"
-      }
-    ]
+    "netclass_patterns": []
   },
   "pcbnew": {
     "last_paths": {
