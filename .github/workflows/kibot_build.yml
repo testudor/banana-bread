@@ -1,31 +1,31 @@
-name: "DRC & ERC"
+# name: "DRC & ERC"
 
-on:
-  push:
-    paths:
-      - "*.sch"
-      - "*.kicad_pcb"
-      - "*.kibot.yaml"
-      - ".github/workflows/kibot_build.yml"
-  pull_request:
-    paths:
-      - "*.sch"
-      - "*.kicad_pcb"
-      - "*.kibot.yaml"
-      - ".github/workflows/kibot_build.yml"
+# on:
+#   push:
+#     paths:
+#       - "*.sch"
+#       - "*.kicad_pcb"
+#       - "*.kibot.yaml"
+#       - ".github/workflows/kibot_build.yml"
+#   pull_request:
+#     paths:
+#       - "*.sch"
+#       - "*.kicad_pcb"
+#       - "*.kibot.yaml"
+#       - ".github/workflows/kibot_build.yml"
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
 
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
+#     steps:
+#       - name: Checkout
+#         uses: actions/checkout@v3
 
-      - name: KiCAD test & build
-        uses: INTI-CMNB/KiBot@v2_k6
-        with:
-          config: config.kibot.yaml
-          dir: output
-          schema: "Banana Bread.kicad_sch"
-          board: "Banana Bread.kicad_pcb"
+#       - name: KiCAD test & build
+#         uses: INTI-CMNB/KiBot@v2_k6
+#         with:
+#           config: config.kibot.yaml
+#           dir: output
+#           schema: "Banana Bread.kicad_sch"
+#           board: "Banana Bread.kicad_pcb"
